@@ -7,19 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C251D672A07543C00AD2359 /* ProjectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251D662A07543C00AD2359 /* ProjectItemView.swift */; };
+		3C251D692A0775C200AD2359 /* TagLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251D682A0775C200AD2359 /* TagLayoutView.swift */; };
+		3C251D6B2A0786A800AD2359 /* RandomGenerateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251D6A2A0786A800AD2359 /* RandomGenerateAccountView.swift */; };
+		3C251D6E2A078EC300AD2359 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3C251D6D2A078EC300AD2359 /* MarkdownUI */; };
 		3C47E2EF2A034F3800BF999C /* L2SybilsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E2EE2A034F3800BF999C /* L2SybilsApp.swift */; };
 		3C47E2F12A034F3800BF999C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E2F02A034F3800BF999C /* ContentView.swift */; };
 		3C47E2F32A034F3900BF999C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C47E2F22A034F3900BF999C /* Assets.xcassets */; };
 		3C47E2F72A034F3900BF999C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C47E2F62A034F3900BF999C /* Preview Assets.xcassets */; };
+		3C47E3062A04112600BF999C /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3052A04112600BF999C /* TabbarView.swift */; };
+		3C47E3082A04116A00BF999C /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3072A04116A00BF999C /* UIState.swift */; };
+		3C47E30C2A04124500BF999C /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E30B2A04124500BF999C /* TabbarViewModel.swift */; };
+		3C47E3102A04137900BF999C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E30F2A04137900BF999C /* WelcomeView.swift */; };
+		3C47E3122A0414D000BF999C /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3112A0414D000BF999C /* AccountsView.swift */; };
+		3C47E3142A04179C00BF999C /* CurrentDateEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3132A04179C00BF999C /* CurrentDateEnvironment.swift */; };
+		3C47E3162A0551DD00BF999C /* WelcomeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3152A0551DD00BF999C /* WelcomeSectionView.swift */; };
+		3C47E3192A0600BF00BF999C /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3182A0600BF00BF999C /* SectionHeaderView.swift */; };
+		3C47E31B2A0625CF00BF999C /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E31A2A0625CF00BF999C /* Text.swift */; };
+		3C47E31D2A06723E00BF999C /* PreviousBigAirdropsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E31C2A06723E00BF999C /* PreviousBigAirdropsView.swift */; };
+		3C47E31F2A0673EC00BF999C /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E31E2A0673EC00BF999C /* FAQView.swift */; };
+		3C47E3242A067DC800BF999C /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3232A067DC800BF999C /* ProjectsView.swift */; };
+		3C47E3262A069A1E00BF999C /* AirdropInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3252A069A1E00BF999C /* AirdropInfoView.swift */; };
+		3C47E3292A069AAE00BF999C /* Airdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3282A069AAE00BF999C /* Airdrop.swift */; };
+		3C47E32B2A06A1F700BF999C /* FAQRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E32A2A06A1F700BF999C /* FAQRowView.swift */; };
+		3C47E32D2A06A39700BF999C /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E32C2A06A39700BF999C /* FAQ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C251D662A07543C00AD2359 /* ProjectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemView.swift; sourceTree = "<group>"; };
+		3C251D682A0775C200AD2359 /* TagLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayoutView.swift; sourceTree = "<group>"; };
+		3C251D6A2A0786A800AD2359 /* RandomGenerateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerateAccountView.swift; sourceTree = "<group>"; };
 		3C47E2EB2A034F3800BF999C /* L2Sybils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L2Sybils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C47E2EE2A034F3800BF999C /* L2SybilsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L2SybilsApp.swift; sourceTree = "<group>"; };
 		3C47E2F02A034F3800BF999C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C47E2F22A034F3900BF999C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C47E2F42A034F3900BF999C /* L2Sybils.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = L2Sybils.entitlements; sourceTree = "<group>"; };
 		3C47E2F62A034F3900BF999C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C47E3052A04112600BF999C /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		3C47E3072A04116A00BF999C /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
+		3C47E30B2A04124500BF999C /* TabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
+		3C47E30F2A04137900BF999C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3C47E3112A0414D000BF999C /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		3C47E3132A04179C00BF999C /* CurrentDateEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDateEnvironment.swift; sourceTree = "<group>"; };
+		3C47E3152A0551DD00BF999C /* WelcomeSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSectionView.swift; sourceTree = "<group>"; };
+		3C47E3182A0600BF00BF999C /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		3C47E31A2A0625CF00BF999C /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		3C47E31C2A06723E00BF999C /* PreviousBigAirdropsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousBigAirdropsView.swift; sourceTree = "<group>"; };
+		3C47E31E2A0673EC00BF999C /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
+		3C47E3232A067DC800BF999C /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		3C47E3252A069A1E00BF999C /* AirdropInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirdropInfoView.swift; sourceTree = "<group>"; };
+		3C47E3282A069AAE00BF999C /* Airdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airdrop.swift; sourceTree = "<group>"; };
+		3C47E32A2A06A1F700BF999C /* FAQRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQRowView.swift; sourceTree = "<group>"; };
+		3C47E32C2A06A39700BF999C /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C251D6E2A078EC300AD2359 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +92,14 @@
 		3C47E2ED2A034F3800BF999C /* L2Sybils */ = {
 			isa = PBXGroup;
 			children = (
+				3C47E3272A069AA300BF999C /* models */,
+				3C47E3032A040FD800BF999C /* representables */,
+				3C47E3022A040FCD00BF999C /* extensions */,
+				3C47E3012A040FC200BF999C /* viewModifiers */,
+				3C47E3002A040FB800BF999C /* viewModels */,
+				3C47E2FF2A040FAE00BF999C /* views */,
+				3C47E2FE2A040FA900BF999C /* utils */,
+				3C47E2FD2A040FA400BF999C /* env */,
 				3C47E2EE2A034F3800BF999C /* L2SybilsApp.swift */,
 				3C47E2F02A034F3800BF999C /* ContentView.swift */,
 				3C47E2F22A034F3900BF999C /* Assets.xcassets */,
@@ -67,6 +115,121 @@
 				3C47E2F62A034F3900BF999C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C47E2FD2A040FA400BF999C /* env */ = {
+			isa = PBXGroup;
+			children = (
+				3C47E3072A04116A00BF999C /* UIState.swift */,
+				3C47E3132A04179C00BF999C /* CurrentDateEnvironment.swift */,
+			);
+			path = env;
+			sourceTree = "<group>";
+		};
+		3C47E2FE2A040FA900BF999C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		3C47E2FF2A040FAE00BF999C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3C47E3222A067DB800BF999C /* projects */,
+				3C47E3172A0600B200BF999C /* shared */,
+				3C47E30E2A04135E00BF999C /* accounts */,
+				3C47E30D2A04135800BF999C /* welcome */,
+				3C47E3042A04110D00BF999C /* home */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		3C47E3002A040FB800BF999C /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		3C47E3012A040FC200BF999C /* viewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModifiers;
+			sourceTree = "<group>";
+		};
+		3C47E3022A040FCD00BF999C /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C47E31A2A0625CF00BF999C /* Text.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		3C47E3032A040FD800BF999C /* representables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = representables;
+			sourceTree = "<group>";
+		};
+		3C47E3042A04110D00BF999C /* home */ = {
+			isa = PBXGroup;
+			children = (
+				3C47E3052A04112600BF999C /* TabbarView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		3C47E30D2A04135800BF999C /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3C47E30F2A04137900BF999C /* WelcomeView.swift */,
+				3C47E3152A0551DD00BF999C /* WelcomeSectionView.swift */,
+				3C47E30B2A04124500BF999C /* TabbarViewModel.swift */,
+				3C47E31C2A06723E00BF999C /* PreviousBigAirdropsView.swift */,
+				3C47E31E2A0673EC00BF999C /* FAQView.swift */,
+				3C47E3252A069A1E00BF999C /* AirdropInfoView.swift */,
+				3C47E32A2A06A1F700BF999C /* FAQRowView.swift */,
+			);
+			path = welcome;
+			sourceTree = "<group>";
+		};
+		3C47E30E2A04135E00BF999C /* accounts */ = {
+			isa = PBXGroup;
+			children = (
+				3C47E3112A0414D000BF999C /* AccountsView.swift */,
+				3C251D6A2A0786A800AD2359 /* RandomGenerateAccountView.swift */,
+			);
+			path = accounts;
+			sourceTree = "<group>";
+		};
+		3C47E3172A0600B200BF999C /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				3C47E3182A0600BF00BF999C /* SectionHeaderView.swift */,
+				3C251D682A0775C200AD2359 /* TagLayoutView.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		3C47E3222A067DB800BF999C /* projects */ = {
+			isa = PBXGroup;
+			children = (
+				3C251D662A07543C00AD2359 /* ProjectItemView.swift */,
+				3C47E3232A067DC800BF999C /* ProjectsView.swift */,
+			);
+			path = projects;
+			sourceTree = "<group>";
+		};
+		3C47E3272A069AA300BF999C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3C47E3282A069AAE00BF999C /* Airdrop.swift */,
+				3C47E32C2A06A39700BF999C /* FAQ.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +248,9 @@
 			dependencies = (
 			);
 			name = L2Sybils;
+			packageProductDependencies = (
+				3C251D6D2A078EC300AD2359 /* MarkdownUI */,
+			);
 			productName = L2Sybils;
 			productReference = 3C47E2EB2A034F3800BF999C /* L2Sybils.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +279,9 @@
 				Base,
 			);
 			mainGroup = 3C47E2E22A034F3800BF999C;
+			packageReferences = (
+				3C251D6C2A078EC300AD2359 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			productRefGroup = 3C47E2EC2A034F3800BF999C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +308,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C47E3062A04112600BF999C /* TabbarView.swift in Sources */,
+				3C251D6B2A0786A800AD2359 /* RandomGenerateAccountView.swift in Sources */,
+				3C47E3262A069A1E00BF999C /* AirdropInfoView.swift in Sources */,
+				3C47E3162A0551DD00BF999C /* WelcomeSectionView.swift in Sources */,
+				3C47E3102A04137900BF999C /* WelcomeView.swift in Sources */,
 				3C47E2F12A034F3800BF999C /* ContentView.swift in Sources */,
+				3C47E3242A067DC800BF999C /* ProjectsView.swift in Sources */,
+				3C47E30C2A04124500BF999C /* TabbarViewModel.swift in Sources */,
+				3C47E3122A0414D000BF999C /* AccountsView.swift in Sources */,
+				3C47E32D2A06A39700BF999C /* FAQ.swift in Sources */,
+				3C251D672A07543C00AD2359 /* ProjectItemView.swift in Sources */,
+				3C47E3142A04179C00BF999C /* CurrentDateEnvironment.swift in Sources */,
+				3C47E3292A069AAE00BF999C /* Airdrop.swift in Sources */,
+				3C47E31D2A06723E00BF999C /* PreviousBigAirdropsView.swift in Sources */,
+				3C47E3192A0600BF00BF999C /* SectionHeaderView.swift in Sources */,
 				3C47E2EF2A034F3800BF999C /* L2SybilsApp.swift in Sources */,
+				3C251D692A0775C200AD2359 /* TagLayoutView.swift in Sources */,
+				3C47E31F2A0673EC00BF999C /* FAQView.swift in Sources */,
+				3C47E31B2A0625CF00BF999C /* Text.swift in Sources */,
+				3C47E32B2A06A1F700BF999C /* FAQRowView.swift in Sources */,
+				3C47E3082A04116A00BF999C /* UIState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +385,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,6 +439,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -287,7 +479,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = asia.madan.L2Sybils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +519,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = asia.madan.L2Sybils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,6 +550,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C251D6C2A078EC300AD2359 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C251D6D2A078EC300AD2359 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C251D6C2A078EC300AD2359 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C47E2E32A034F3800BF999C /* Project object */;
 }

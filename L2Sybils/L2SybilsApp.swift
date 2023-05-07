@@ -9,9 +9,24 @@ import SwiftUI
 
 @main
 struct L2SybilsApp: App {
+    
+    @StateObject private var uiState = UIState.shared
+    
+    @SceneBuilder
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            contentView
         }
+    }
+
+    private var contentView: some View {
+        TabbarView()
+            .environmentObject(uiState)
+            .onAppear(perform: setupAppearance)
+        
+    }
+    
+    private func setupAppearance() {
+        
     }
 }
