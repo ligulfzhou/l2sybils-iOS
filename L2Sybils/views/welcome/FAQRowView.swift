@@ -24,15 +24,15 @@ struct FAQRowView: View {
         VStack(alignment: .leading) {
             Text(faq.question)
                 .font(.headline)
-                .foregroundColor(.white)
                     
             if isExpanded {
                 Spacer()
                 
                 VStack(alignment: .leading) {
                     Text(faq.answer)
-                        .foregroundColor(.black)
                 }
+
+                Spacer()
             }
         }
     }

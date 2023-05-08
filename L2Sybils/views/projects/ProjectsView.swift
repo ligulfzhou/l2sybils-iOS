@@ -10,13 +10,23 @@ import SwiftUI
 struct ProjectsView: View {
 
     var body: some View {
-        HStack {
-            Image("welcome")
-            
-            VStack {
-                Text("Optimism").font(.headline)
-                Text("Optimistic Ethereum is an EVM-compatible Optimistic Rollup chain. \nIn round one, the protocol distributed a total of 200m OP tokens to 248,699 addresses. \nIn round two, it distributed a total of 11.7 million OP tokens to over 300,000 addresses.").font(.body)
+        NavigationView {
+            List {
+                Section {
+                    NavigationLink(destination: RandomGenerateAccountView()) {
+                        Text("zkSync Lite")
+                    }
+                    NavigationLink(destination: MnemonicAccountView()) {
+                        Text("zkSync Era")
+                    }
+                } header: {
+                    SectionHeaderView(text: "zkSync")
+                }
             }
+
+            .listStyle(.insetGrouped)
+
+            .navigationTitle("Projects")
         }
     }
 }

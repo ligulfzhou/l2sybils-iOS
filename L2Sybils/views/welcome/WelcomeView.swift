@@ -13,13 +13,15 @@ struct WelcomeView: View {
         NavigationView {
             List {
                 WelcomeSectionView()
-                    .listRowBackground(Color.gray)
+//                    .listRowBackground(Color.gray)
+                
+                AdmobBannerView()
                 
                 PreviousBigAirdropsView()
-                    .listRowBackground(Color.gray)
+//                    .listRowBackground(Color.gray)
                 
                 FAQView()
-                    .listRowBackground(Color.gray)
+//                    .listRowBackground(Color.gray)
             }
 
             .listStyle(.insetGrouped)

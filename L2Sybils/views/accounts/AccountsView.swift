@@ -16,19 +16,18 @@ struct AccountsView: View {
                     NavigationLink(destination: RandomGenerateAccountView()) {
                         Text("Random")
                     }
-                    NavigationLink(destination: RandomGenerateAccountView()) {
+                    NavigationLink(destination: MnemonicAccountView()) {
                         Text("Mnemonic Code")
                     }
-
                 } header: {
                     SectionHeaderView(text: "Generate")
                 }
-                
+                                
                 Section {
-                    NavigationLink(destination: RandomGenerateAccountView()) {
+                    NavigationLink(destination: DistributeETHfromOKX()) {
                         Text("From Okx")
                     }
-                    NavigationLink(destination: RandomGenerateAccountView()) {
+                    NavigationLink(destination: DistributeETHfromBinance()) {
                         Text("From Binance")
                     }
                 } header: {

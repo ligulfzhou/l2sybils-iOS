@@ -32,7 +32,7 @@ struct AirdropInfoView: View {
                     
                     Text(airdrop.name)
                         .font(.headline)
-                        .foregroundColor(.white)
+//                        .foregroundColor(.white)
                     
                     HStack {
                         ForEach(airdrop.tags, id: \.self) { tag in
