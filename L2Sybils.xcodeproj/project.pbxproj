@@ -173,6 +173,7 @@
 		3C47E3002A040FB800BF999C /* viewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3C47E30B2A04124500BF999C /* TabbarViewModel.swift */,
 				3C251D722A07D04100AD2359 /* RandomAccountViewModel.swift */,
 			);
 			path = viewModels;
@@ -213,7 +214,6 @@
 			children = (
 				3C47E30F2A04137900BF999C /* WelcomeView.swift */,
 				3C47E3152A0551DD00BF999C /* WelcomeSectionView.swift */,
-				3C47E30B2A04124500BF999C /* TabbarViewModel.swift */,
 				3C47E31C2A06723E00BF999C /* PreviousBigAirdropsView.swift */,
 				3C47E31E2A0673EC00BF999C /* FAQView.swift */,
 				3C47E3252A069A1E00BF999C /* AirdropInfoView.swift */,
