@@ -7,21 +7,39 @@
 
 import SwiftUI
 
+
+enum Tabs: String, CaseIterable, CustomStringConvertible {
+    case zksynclite, zksyncera
+        
+    var description: String {
+        switch self {
+        case .zksynclite:
+            return "zkSync Lite"
+        case .zksyncera:
+            return "zkSync Era"
+        }
+    }
+}
+
+
+
 struct ProjectsView: View {
 
+    @State private var selectedTab: Tabs = .zksynclite
+    
     var body: some View {
         NavigationView {
             List {
-                Section {
+                Section(content: {
                     NavigationLink(destination: RandomGenerateAccountView()) {
-                        Text("zkSync Lite")
-                    }
-                    NavigationLink(destination: MnemonicAccountView()) {
-                        Text("zkSync Era")
-                    }
-                } header: {
-                    SectionHeaderView(text: "zkSync")
-                }
+                       Text("zkSync Lite")
+                   }
+                   NavigationLink(destination: MnemonicAccountView()) {
+                       Text("zkSync Era")
+                   }
+                }, header: {
+                    picker
+                })
             }
 
             .listStyle(.insetGrouped)
@@ -29,5 +47,17 @@ struct ProjectsView: View {
             .navigationTitle("Projects")
         }
     }
+    
+    private var picker: some View {
+        Picker(selection: $selectedTab, label: Text("")) {
+            ForEach(Tabs.allCases, id: \.self) { tab in
+                Text(tab.description)
+//                Text(LocalizedStringKey(tab.rawValue.capitalized)).textCase(nil)
+            }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+        .padding()
+    }
+
 }
 

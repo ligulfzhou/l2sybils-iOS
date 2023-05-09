@@ -15,7 +15,7 @@ struct WelcomeView: View {
                 WelcomeSectionView()
 //                    .listRowBackground(Color.gray)
                 
-                AdmobBannerView()
+//                AdmobBannerView()
                 
                 PreviousBigAirdropsView()
 //                    .listRowBackground(Color.gray)
