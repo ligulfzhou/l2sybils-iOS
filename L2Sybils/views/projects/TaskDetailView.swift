@@ -10,6 +10,7 @@ import MarkdownUI
 
 struct TaskDetailView: View {
     let task: Task
+    @State var showSafari = false
 
     var body: some View {
         List {
@@ -23,30 +24,51 @@ struct TaskDetailView: View {
                 Spacer()
             }
             .padding()
-
-            HStack(alignment: .bottom, content: {
-                Text("各种")
-                Spacer()
-                Text("属性")
-            })
-            HStack(alignment: .bottom, content: {
-                Text("各种")
-                Spacer()
-                Text("属性")
-            })
-            HStack(alignment: .bottom, content: {
-                Text("各种")
-                Spacer()
-                Text("属性")
-            })
             
+            HStack(alignment: .bottom, content: {
+                Text("Name")
+                Spacer()
+                Text(task.name)
+            })
+
+            if let site = task.site {
+                HStack(alignment: .center, content: {
+                    Text("Site")
+                    Spacer()
+                    Button {
+                        self.showSafari = true
+                    } label: {
+                        Text(site)
+                    }
+                    .sheet(isPresented: $showSafari) {
+                        SafariView(url: URL(string: site)!)
+                    }
+                })
+            }
+            
+            if let doc = task.doc {
+                HStack(alignment: .center, content: {
+                    Text("Doc")
+                    Spacer()
+                    Button {
+                        self.showSafari = true
+                    } label: {
+                        Text(doc)
+                    }
+                    .sheet(isPresented: $showSafari) {
+                        SafariView(url: URL(string: doc)!)
+                    }
+                   
+                })
+            }
+
             if (task.code != nil) {
                 Section {
                     Markdown(task.code ?? "")
                         .markdownTheme(.gitHub)
                     
                 } header: {
-                    SectionHeaderView(text: "code")
+                    SectionHeaderView(text: "Code")
                 }
             }
         }

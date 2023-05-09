@@ -47,7 +47,8 @@ Binacce().withdraw2("0.1", "0x...")
             Spacer()
             
         }
-        .navigationTitle("Distribute ETH")    }
+        .navigationTitle("Distribute ETH")
+    }
 }
 
 struct DistributeETHfromBinance_Previews: PreviewProvider {

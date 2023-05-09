@@ -16,21 +16,21 @@ struct TabbarView: View {
             TabView(selection: $uiState.selectedTab) {
                 WelcomeView()
                     .tabItem {
-                        Image("welcome")
+                        Image("welcome_tab")
                         Text("welcome")
                     }
                     .tag(UIState.Tab.welcome)
                 
                 AccountsView()
                     .tabItem {
-                        Image("welcome")
+                        Image("account_tab")
                         Text("accounts")
                     }
                     .tag(UIState.Tab.accounts)
                 
                 ProjectsView()
                     .tabItem {
-                        Image("welcome")
+                        Image("project_tab")
                         Text("projects")
                     }
                     .tag(UIState.Tab.projects)

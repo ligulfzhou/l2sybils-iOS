@@ -30,13 +30,13 @@ def generate_random_account()-> LocalAccount:
             Markdown(text)
                 .markdownTheme(.gitHub)
             
-            HStack(alignment: .center) {
-                Button {
-                    print("asdfasdf")
-                } label: {
-                    Text("Run")
-                }
-            }
+//            HStack(alignment: .center) {
+//                Button {
+//                    print("asdfasdf")
+//                } label: {
+//                    Text("Run")
+//                }
+//            }
             Spacer()
             
             
