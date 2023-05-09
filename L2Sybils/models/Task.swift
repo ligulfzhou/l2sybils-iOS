@@ -242,3 +242,360 @@ def _get_wallet(account: LocalAccount) -> Wallet:
         doc: "https://docs.zksync.io/api/sdk/python/tutorial/#unlocking-zksync-account"
     )
 ]
+
+
+
+
+let EraBridges: [Task] = [
+    Task(
+        name: "Official Bridge",
+        icon: "zksync",
+        site: "https://bridge.zksync.io"
+    ),
+    Task(
+        name: "Orbiter.Finance",
+        icon: "orbiterfinance",
+        site: "https://www.orbiter.finance/?source=Ethereum&dest=zkSync%20Lite"
+    ),
+    Task(
+        name: "MultiChain",
+        icon: "multichain",
+        site: "https://app.multichain.org/#/router"
+    ),
+    Task(
+        name: "LayerSwap.io",
+        icon: "layerswap",
+        site: "https://www.layerswap.io"
+    )
+]
+
+
+let EraTasks: [Task] = [
+    Task(
+        name: "Mintsquare - mint nft",
+        icon: "mintsquare",
+        site: "https://mintsquare.io/mint",
+        code: """
+```python3
+class MintSquare:
+
+    @classmethod
+    def mint_nft(cls, account: LocalAccount, w3: Web3, ipfs_url: str) -> bool:
+        contractAds = Web3.to_checksum_address('0x53eC17BD635F7A54B3551E76Fd53Db8881028fC3')
+        abi = get_abi('mintsquare/mintsquare.json')
+
+        mintContract = w3.eth.contract(address=contractAds, abi=abi)
+        gas_price = w3.eth.gas_price
+
+        tx_hash = mintContract.functions.mint(ipfs_url).build_transaction({
+            'from': account.address,
+            'nonce': w3.eth.get_transaction_count(account.address),
+            'gasPrice': gas_price,
+            'gas': 3385066,
+            "value": w3.to_wei(0, 'ether')
+        })
+
+        gas_estimate = w3.eth.estimate_gas(tx_hash)
+        gas_fee = gas_estimate * gas_price
+        print(f'Estimated gas fee: {w3.from_wei(gas_fee, "ether")} ETH')
+
+        signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        return True
+```
+"""
+    ),
+    Task(
+        name: "Mute - swap token",
+        icon: "mute",
+        site: "https://mute.io",
+        code: """
+```python3
+class Mute:
+
+    @classmethod
+    def eth_to_usdc(cls, account: LocalAccount, w3: Web3, value: int = 10 ** 16) -> bool:
+        account_address = Web3.to_checksum_address(account.address)
+        abi = get_abi('mute/Router.json')
+        router_contract_address = w3.to_checksum_address(conf.mute['Router'])
+        router_contract = w3.eth.contract(address=router_contract_address, abi=abi)
+        path = (
+            Web3.to_checksum_address(TokenAddress.weth.value),
+            Web3.to_checksum_address(TokenAddress.usdc.value)
+        )
+
+        gas_price = w3.eth.gas_price
+        # Function: sWapExactETHForTokenssupportingFeelnTransferTokens(uint256 amountouthin, adress[] path, address to, uint25 deadline, bool[] stable)
+        tx_hash = router_contract.functions.swapExactETHForTokensSupportingFeeOnTransferTokens(
+            0,
+            path,
+            account.address,
+            w3.to_wei(int(time.time()) + 1800, 'wei'),
+            [False, False]
+        ).build_transaction({
+            'from': account_address,
+            'nonce': w3.eth.get_transaction_count(account_address),
+            'gasPrice': gas_price,
+            'value': value,
+            'gas': 1000000,
+        })
+
+        gas_estimate = w3.eth.estimate_gas(tx_hash)
+        gas_fee = gas_estimate * gas_price
+        print(f'Mute eth=>usdc: Estimated gas fee: {w3.from_wei(gas_fee, "ether")} ETH')
+
+        signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        return True
+
+    @classmethod
+    def usdc_to_eth(cls, account: LocalAccount, w3: Web3, value: int = 10 * 10 ** 6) -> bool:
+        account_address = Web3.to_checksum_address(account.address)
+        abi = get_abi('mute/Router.json')
+        router_contract_address = w3.to_checksum_address(conf.mute['Router'])
+        router_contract = w3.eth.contract(address=router_contract_address, abi=abi)
+        path = (
+            Web3.to_checksum_address(TokenAddress.usdc.value),
+            Web3.to_checksum_address(TokenAddress.weth.value)
+        )
+
+        gas_price = w3.eth.gas_price
+        # Function: sWapExactETHForTokenssupportingFeelnTransferTokens(uint256 amountouthin, adress[] path, address to, uint25 deadline, bool[] stable)
+        tx_hash = router_contract.functions.swapExactTokensForETHSupportingFeeOnTransferTokens(
+            value,
+            0,
+            path,
+            account.address,
+            w3.to_wei(int(time.time()) + 1800, 'wei'),
+            [False, False]
+        ).build_transaction({
+            'from': account_address,
+            'nonce': w3.eth.get_transaction_count(account_address),
+            'gasPrice': gas_price,
+            # 'value': value,  # very important.
+            'gas': 1000000,
+        })
+
+        gas_estimate = w3.eth.estimate_gas(tx_hash)
+        gas_fee = gas_estimate * gas_price
+        print(f'Mute eth=>usdc: Estimated gas fee: {w3.from_wei(gas_fee, "ether")} ETH')
+
+        signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        return True
+```
+"""
+    ),
+    Task(
+        name: "SyncSwap - swap token",
+        icon: "syncswap",
+        site: "https://syncswap.xyz/",
+        code: """
+```python3
+class SyncSwap:
+
+    @classmethod
+    def usdc_to_eth(cls, account: LocalAccount, w3: Web3, value: int = 10 * 10 ** 6) -> bool:
+        # default 10 * 10**6 => 10 usdc
+        account_address = Web3.to_checksum_address(account.address)
+        usdc_ads = Web3.to_checksum_address(TokenAddress.usdc.value)
+        weth_ads = Web3.to_checksum_address(TokenAddress.weth.value)
+        zero_ads = Web3.to_checksum_address(TokenAddress.eth.value)
+
+        # contract addresses: https://syncswap.gitbook.io/api-documentation/resources/smart-contract
+        routerAds = Web3.to_checksum_address(conf.syncswap['address']['SyncSwapRouter'])
+        poolFactoryAds = Web3.to_checksum_address(conf.syncswap['address']['SyncSwapClassicPoolFactory'])
+
+        # abi https://syncswap.gitbook.io/api-documentation/resources/abis
+        router_abi = get_abi('syncswap/SyncSwapRouter.json')
+        pool_factory_abi = get_abi('syncswap/SyncSwapClassicFactory.json')
+
+        # Pool Factory
+        poolFactoryContract = w3.eth.contract(address=poolFactoryAds, abi=pool_factory_abi)
+
+        pool = poolFactoryContract.functions.getPool(weth_ads, usdc_ads).call()
+        print(f'get pool address: {pool}')
+
+        withdraw_mode = 1
+        swap_data = encode(
+            ["address", "address", "uint8"],  # tokenIn, to, withdraw mode
+            [usdc_ads, account_address, withdraw_mode],
+        )
+
+        # struct SwapStep
+        swap_step = [(
+            pool,  # pool
+            swap_data,  # data
+            zero_ads,  # callback
+            '0x'  # callbackData
+        )]
+
+        # struct SwapPath
+        swap_path = [(
+            swap_step,
+            usdc_ads,
+            value
+        )]
+
+        router_contract = w3.eth.contract(address=routerAds, abi=router_abi)
+        deadline = w3.to_wei(int(time.time()) + 1800, 'wei')
+        gas_price = w3.eth.gas_price
+        tx_hash = router_contract.functions.swap(swap_path, 0, deadline).build_transaction({
+            'from': account_address,
+            'nonce': w3.eth.get_transaction_count(account_address),
+            'gasPrice': gas_price,
+            'gas': 2000000,
+        })
+
+        gas_estimate = w3.eth.estimate_gas(tx_hash)
+        gas_fee = gas_estimate * gas_price
+        print(f'Estimated gas fee: {w3.from_wei(gas_fee, "ether")} ETH')
+
+        if gas_fee > GAS_LIMIT_IN_ETHER * (10 ** 18):
+            print("gas price too high, just skip...")
+            return False
+
+        signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        return True
+
+    @classmethod
+    def eth_to_usdc(cls, account: LocalAccount, w3: Web3, value: int = 10 ** 16) -> bool:
+        # default 10**16 => 0.01eth
+        account_address = Web3.to_checksum_address(account.address)
+        usdc_ads = Web3.to_checksum_address(TokenAddress.usdc.value)
+        weth_ads = Web3.to_checksum_address(TokenAddress.weth.value)
+        zero_ads = Web3.to_checksum_address(TokenAddress.eth.value)
+
+        # contract addresses: https://syncswap.gitbook.io/api-documentation/resources/smart-contract
+        routerAds = Web3.to_checksum_address(conf.syncswap['address']['SyncSwapRouter'])
+        poolFactoryAds = Web3.to_checksum_address(conf.syncswap['address']['SyncSwapClassicPoolFactory'])
+
+        # abi: https://syncswap.gitbook.io/api-documentation/resources/abis
+        router_abi = get_abi('syncswap/SyncSwapRouter.json')
+        pool_factory_abi = get_abi('syncswap/SyncSwapClassicFactory.json')
+
+        # Pool Factory
+        poolFactoryContract = w3.eth.contract(address=poolFactoryAds, abi=pool_factory_abi)
+        pool = poolFactoryContract.functions.getPool(weth_ads, usdc_ads).call()
+        print(pool)
+
+        withdraw_mode = 2
+        swap_data = encode(
+            ["address", "address", "uint8"],
+            [weth_ads, account_address, withdraw_mode],
+        )
+
+        # struct SwapStep
+        swap_step = [(
+            pool,
+            swap_data,
+            zero_ads,
+            '0x'
+        )]
+
+        # struct SwapPath
+        swap_path = [(
+            swap_step,
+            zero_ads,
+            value
+        )]
+
+        # SyncSwapRouter
+        router_contract = w3.eth.contract(address=routerAds, abi=router_abi)
+        deadline = w3.to_wei(int(time.time()) + 1800, 'wei')
+        gas_price = w3.eth.gas_price
+        tx_hash = router_contract.functions.swap(swap_path, 0, deadline).build_transaction({
+            'from': account_address,
+            'nonce': w3.eth.get_transaction_count(account_address),
+            'gasPrice': gas_price,
+            'value': value,
+            'gas': 1000000,
+        })
+
+        gas_estimate = w3.eth.estimate_gas(tx_hash)
+        gas_fee = gas_estimate * gas_price
+        print(f'Estimated gas fee: {w3.from_wei(gas_fee, "ether")} ETH')
+
+        if gas_fee > GAS_LIMIT_IN_ETHER * (10 ** 18):
+            print("gas price too high, just skip...")
+            return False
+
+        signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        return True
+
+```
+"""
+    ),
+    Task(
+        name: "Weth - wrap+unwrap",
+        icon: "ethereum",
+        code: """
+```python3
+class WethWrapper:
+
+    @classmethod
+    def deposit(cls, account: LocalAccount, w3: Web3, value: int = int(0.05 * 10 ** 18)) -> bool:
+        print(f'{"*" * 10} wrap {value}(in wei) eth to weth {"*" * 10}')
+        weth_abi = get_abi('weth.json')
+        account_address = Web3.to_checksum_address(account.address)
+        weth_contract = w3.eth.contract(address=Web3.to_checksum_address(TokenAddress.weth.value), abi=weth_abi)
+
+        gas_price = w3.eth.gas_price
+        tx_hash = weth_contract.functions.deposit().build_transaction({
+            'from': account_address,
+            'nonce': w3.eth.get_transaction_count(account_address),
+            'gasPrice': gas_price,
+            'value': value,
+            'gas': 1000000,
+        })
+
+        gas_estimate = w3.eth.estimate_gas(tx_hash)
+        gas_fee = gas_estimate * gas_price
+        print(f'Estimated gas fee: {w3.from_wei(gas_fee, "ether")} ETH')
+        
+        signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        return True
+
+    @classmethod
+    def withdraw(cls, account: LocalAccount, w3: Web3, value: int = int(0.05 * 10 ** 18)) -> bool:
+        print(f'{"*" * 10} unwrap {value}(in wei) weth to eth {"*" * 10}')
+        weth_abi = get_abi('weth.json')
+        account_address = Web3.to_checksum_address(account.address)
+        weth_contract = w3.eth.contract(address=Web3.to_checksum_address(TokenAddress.weth.value), abi=weth_abi)
+
+        gas_price = w3.eth.gas_price
+        tx_hash = weth_contract.functions.withdraw(value).build_transaction({
+            'from': account_address,
+            'nonce': w3.eth.get_transaction_count(account_address),
+            'gasPrice': gas_price,
+            'gas': 1000000,
+        })
+
+        gas_estimate = w3.eth.estimate_gas(tx_hash)
+        gas_fee = gas_estimate * gas_price
+        print(f'Estimated gas fee: {w3.from_wei(gas_fee, "ether")} ETH')
+
+        signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        return True
+```
+"""
+    )
+]

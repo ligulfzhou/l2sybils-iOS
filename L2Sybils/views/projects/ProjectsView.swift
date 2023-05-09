@@ -50,7 +50,7 @@ struct ProjectsView: View {
                         }
                     } else {
                         Section(content: {
-                            ForEach(LiteBridges) { bridge in
+                            ForEach(EraBridges) { bridge in
                                 navigationRow(task: bridge)
                             }
                         }, header: {
@@ -58,7 +58,7 @@ struct ProjectsView: View {
                         })
                         
                         Section {
-                            ForEach(LiteTasks) { task in
+                            ForEach(EraTasks) { task in
                                 navigationRow(task: task)
                             }
                         } header: {

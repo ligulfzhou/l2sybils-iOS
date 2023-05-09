@@ -16,6 +16,7 @@ struct AboutView: View {
 
     var body: some View {
         NavigationView {
+            
             List {
                 Section {
                     HStack {
@@ -26,34 +27,47 @@ struct AboutView: View {
                         Spacer()
                         
                         Text("l2sybils.xyz")
-                        Image(systemName: "chevron.right").imageScale(.medium)
+                        
+                        Image(systemName: "chevron.right")
+                            .imageScale(.medium)
                     }
                     
                     HStack {
                         Link("Privacy Policy", destination: URL(string: "https://www.l2sybils.xyz/privacy/policy")!)
+                        
                         Spacer()
-                        Image(systemName: "chevron.right").imageScale(.medium)
+                        
+                        Image(systemName: "chevron.right")
+                            .imageScale(.medium)
                     }
                     
                     HStack {
                         Button("Review this App") {
                             ReviewHandler.requestReview()
                         }
+                        
                         Spacer()
-                        Image(systemName: "chevron.right").imageScale(.medium)
+                        
+                        Image(systemName: "chevron.right")
+                            .imageScale(.medium)
                     }
                     
                     HStack {
                         Text("App version")
+                        
                         Spacer()
+                        
                         Text(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "")
-                        Image(systemName: "chevron.right").imageScale(.medium)
+                        Image(systemName: "chevron.right")
+                            .imageScale(.medium)
                     }
 
                 } header: {
                     SectionHeaderView(text: "This APP")
                 }
-                                
+                            
+//                AdmobBannerView()
+                
                 Section {
                     HStack {
                         Link("Twitter", destination: URL(string: "https://twitter.com/ligulfzhou")!)
@@ -73,8 +87,8 @@ struct AboutView: View {
                         }
                         
                         Spacer()
+                        
                         Image(systemName: "chevron.right").imageScale(.medium)
-
                     }
                 } header: {
                     SectionHeaderView(text: "About Us")
