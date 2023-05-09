@@ -8,29 +8,6 @@
 import SwiftUI
 
 
-
-
-let LiteBridges: [Task] = [
-    Task(
-        name: "Official Bridge",
-        icon: "zksync",
-        site: "https://lite.zksync.io",
-        code:  "zksyncLiteBridgeToLiteCode"
-    ),
-    Task(
-        name: "Orbiter.Finance",
-        icon: "orbiterfinance",
-        site: "https://www.orbiter.finance/?source=Ethereum&dest=zkSync%20Lite"
-    ),
-    Task(
-        name: "LayerSwap.io",
-        icon: "layerswap",
-        site: "https://www.layerswap.io"
-    )
-]
-
-
-
 enum Tabs: String, CaseIterable, CustomStringConvertible {
     case zksynclite, zksyncera
         
@@ -43,7 +20,6 @@ enum Tabs: String, CaseIterable, CustomStringConvertible {
         }
     }
 }
-
 
 
 struct ProjectsView: View {
@@ -59,60 +35,34 @@ struct ProjectsView: View {
                     if (selectedTab == .zksynclite) {
                         Section(content: {
                             ForEach(LiteBridges) { bridge in
-                                NavigationLink(
-                                    destination: TaskDetailView()) {
-                                        Image(bridge.icon)
-                                            .resizable()
-                                            .frame(width: 18, height: 18)
-                                        Text(bridge.name)
-                                    }
+                                navigationRow(task: bridge)
                             }
                         }, header: {
-                            Text("bridge")
+                            Text("Bridges")
                         })
-
+                        
                         Section {
-                            NavigationLink("Activate") {
-                                BridgeView()
-                            }
-                            NavigationLink("Mint NFT") {
-                                BridgeView()
-                            }
-                            NavigationLink("Transfer NFT") {
-                                BridgeView()
-                            }
-                            NavigationLink("Transfer ETH") {
-                                BridgeView()
+                            ForEach(LiteTasks) { task in
+                                navigationRow(task: task)
                             }
                         } header: {
-                            Text("asdf")
+                            Text("Tasks")
                         }
                     } else {
                         Section(content: {
-                            NavigationLink(destination: BridgeView()) {
-                                Image("optimism").resizable().frame(width: 18, height: 18)
-                                Text("Official Bridge")
-                            }
-
-                            NavigationLink("Official Bridge") {
-                                BridgeView()
-                            }
-                            NavigationLink("Orbiter.Finance") {
-                                BridgeView()
-                            }
-                            NavigationLink("LayerSwap.io") {
-                                BridgeView()
+                            ForEach(LiteBridges) { bridge in
+                                navigationRow(task: bridge)
                             }
                         }, header: {
-                            Text("bridge")
+                            Text("Bridges")
                         })
-
+                        
                         Section {
-                            NavigationLink("Transfer ETH") {
-                                BridgeView()
+                            ForEach(LiteTasks) { task in
+                                navigationRow(task: task)
                             }
                         } header: {
-                            Text("asdf")
+                            Text("Tasks")
                         }
                     }
                     
@@ -133,16 +83,15 @@ struct ProjectsView: View {
         .pickerStyle(SegmentedPickerStyle())
         .padding()
     }
-
-    private var lite: some View {
-        Group {
-            NavigationLink("Official Bridge") {
-                BridgeView()
+    
+    private func navigationRow(task: Task) -> some View {
+        NavigationLink(
+            destination: TaskDetailView(task: task)) {
+                Image(task.icon)
+                    .resizable()
+                    .frame(width: 18, height: 18)
+                Text(task.name)
             }
-            NavigationLink("Task") {
-                BridgeView()
-            }
-        }
     }
 }
 
