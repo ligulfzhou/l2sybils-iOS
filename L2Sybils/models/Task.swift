@@ -302,7 +302,7 @@ class MintSquare:
         signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        print(f'transaction hash: {w3.to_hex(tx_hash)} transaction status: {r.status}')
         return True
 ```
 """
@@ -387,7 +387,7 @@ class Mute:
         signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        print(f'transaction hash: {w3.to_hex(tx_hash)} transaction status: {r.status}')
         return True
 ```
 """
@@ -464,7 +464,7 @@ class SyncSwap:
         signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        print(f'transaction hash: {w3.to_hex(tx_hash)} transaction status: {r.status}')
         return True
 
     @classmethod
@@ -532,7 +532,7 @@ class SyncSwap:
         signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        print(f'transaction hash: {w3.to_hex(tx_hash)} transaction status: {r.status}')
         return True
 
 ```
@@ -568,7 +568,7 @@ class WethWrapper:
         signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        print(f'transaction hash: {w3.to_hex(tx_hash)} transaction status: {r.status}')
         return True
 
     @classmethod
@@ -593,7 +593,7 @@ class WethWrapper:
         signed_tx = w3.eth.account.sign_transaction(tx_hash, private_key=account.key)
         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         r: TxReceipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-        print(f'transaction hash: {w3.to_hex(tx_hash)} \ntransaction status: {r.status}')
+        print(f'transaction hash: {w3.to_hex(tx_hash)} transaction status: {r.status}')
         return True
 ```
 """
