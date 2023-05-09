@@ -25,10 +25,6 @@ let faqs: [FAQ] = [
     ),
     FAQ(
         question: "Q: To participate in Layer2 projects like zkSync or StarkNet, how much eth should i put into one account?",
-        answer: "A: It depends on your budget."
-    ),
-    FAQ(
-        question: "Q: To be continued...",
-        answer: "A: To be continued..."
+        answer: "A: It depends on your budget. It minuses 1 point if your balance is less than 0.005ETH in Arbitrum airdrop program."
     )
 ]
