@@ -50,6 +50,10 @@ struct AdmobBannerView: UIViewControllerRepresentable {
       bannerView.rootViewController = bannerViewController
       bannerViewController.view.addSubview(bannerView)
 
+        // Tell the bannerViewController to update our Coordinator when the ad
+        // width changes.
+        bannerViewController.delegate = context.coordinator
+
       return bannerViewController
     }
 
@@ -59,4 +63,49 @@ struct AdmobBannerView: UIViewControllerRepresentable {
       bannerView.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
       bannerView.load(GADRequest())
     }
+    
+    func makeCoordinator() -> Coordinator {
+      Coordinator(self)
+    }
+
+    class Coordinator: NSObject, BannerViewControllerWidthDelegate {
+      let parent: AdmobBannerView
+
+      init(_ parent: AdmobBannerView) {
+        self.parent = parent
+      }
+
+      // MARK: - BannerViewControllerWidthDelegate methods
+        
+        func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
+          print("\(#function) called")
+        }
+
+        func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
+          print("\(#function) called")
+        }
+
+        func bannerViewDidRecordImpression(_ bannerView: GADBannerView) {
+          print("\(#function) called")
+        }
+
+        func bannerViewWillPresentScreen(_ bannerView: GADBannerView) {
+          print("\(#function) called")
+        }
+
+        func bannerViewWillDismissScreen(_ bannerView: GADBannerView) {
+          print("\(#function) called")
+        }
+
+        func bannerViewDidDismissScreen(_ bannerView: GADBannerView) {
+          print("\(#function) called")
+        }
+
+
+      func bannerViewController(_ bannerViewController: BannerViewController, didUpdate width: CGFloat) {
+        // Pass the viewWidth from Coordinator to BannerView.
+        parent.viewWidth = width
+      }
+    }
+
 }
