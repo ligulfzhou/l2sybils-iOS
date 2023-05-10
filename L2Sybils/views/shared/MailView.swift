@@ -13,6 +13,10 @@ struct MailView: UIViewControllerRepresentable {
 
     @Environment(\.presentationMode) var presentation
     @Binding var result: Result<MFMailComposeResult, Error>?
+    
+//    init(subject: String, recipients: [String], body: String) {
+//
+//    }
 
     class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
 
@@ -40,12 +44,13 @@ struct MailView: UIViewControllerRepresentable {
     }
 
     func makeCoordinator() -> Coordinator {
-        return Coordinator(presentation: presentation,
-                           result: $result)
+        return Coordinator(presentation: presentation, result: $result)
     }
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
         let vc = MFMailComposeViewController()
+        vc.setSubject("hello airdrop sybil")
+        vc.setToRecipients(["ligulfzhou53@gmail.com"])
         vc.mailComposeDelegate = context.coordinator
         return vc
     }

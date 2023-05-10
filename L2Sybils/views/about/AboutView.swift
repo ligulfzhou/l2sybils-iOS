@@ -53,6 +53,15 @@ struct AboutView: View {
                     }
                     
                     HStack {
+                        Link("View in app store", destination: URL(string: "https://apps.apple.com/us/app/airdrop-sybils/id6448769452")!)
+                        
+                        Spacer()
+                        
+                        Image(systemName: "chevron.right")
+                            .imageScale(.medium)
+                    }
+                    
+                    HStack {
                         Text("App version")
                         
                         Spacer()
@@ -79,9 +88,10 @@ struct AboutView: View {
                         if (MFMailComposeViewController.canSendMail()) {
                             Button("Email") {
                                 self.isShowingMailView.toggle()
-                            }                                .sheet(isPresented: $isShowingMailView) {
-                                    MailView(result: self.$result)
-                                }
+                            }
+                            .sheet(isPresented: $isShowingMailView) {
+                                MailView(result: self.$result)
+                            }
                         } else {
                             Link("Email", destination: URL(string: "mailto:ligulfzhou53@gmail.com")!)
                         }
