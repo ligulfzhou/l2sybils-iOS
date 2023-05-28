@@ -16,12 +16,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
       FirebaseApp.configure()
 
       GADMobileAds.sharedInstance().start(completionHandler: nil)
-
+      GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "46f59f8f919d8093a5ca24292e6cc7f6", GADSimulatorID ]
       return true
   }
 }
-
-
 
 
 @main

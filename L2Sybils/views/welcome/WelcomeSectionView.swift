@@ -13,15 +13,11 @@ struct WelcomeSectionView: View {
         Section {
             HStack {
                 VStack(alignment: .leading, content: {
-                    Text("Welcome to Airdrop Sybil club!")
+                    Text("welcome_to_sybil_club")
                         .font(.headline)
 
-                    Text("Learn to be an Airdrop Hunter or even an Airdrop Sybil, Get your hands dirty, and finally make your fortune.")
+                    Text("welcome_description")
                         .font(.system(size: 12))
-
-//                    Button("started") {
-//                        print("get started.....")
-//                    }
                 })
                 Spacer()
                 VStack {

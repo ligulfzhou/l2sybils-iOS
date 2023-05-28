@@ -73,8 +73,7 @@ let LiteTasks: [Task] = [
         icon: "zksync",
         code: """
 ```python3
-from zksync_sdk import ZkSyncProviderV01, HttpJsonRPCTransport, network, ZkSync, EthereumProvider, Wallet, \
-    ZkSyncSigner, EthereumSignerWeb3, ZkSyncLibrary
+from zksync_sdk import ZkSyncProviderV01, HttpJsonRPCTransport, network, ZkSync, EthereumProvider, Wallet, ZkSyncSigner, EthereumSignerWeb3, ZkSyncLibrary
 
 environ.setdefault('ZK_SYNC_LIBRARY_PATH', '<YOUR ZK_SYNC_LIBRARY_PATH>')
 
@@ -117,8 +116,7 @@ def _get_wallet(account: LocalAccount) -> Wallet:
         icon: "zksync",
         code: """
 ```python3
-from zksync_sdk import ZkSyncProviderV01, HttpJsonRPCTransport, network, ZkSync, EthereumProvider, Wallet, \
-    ZkSyncSigner, EthereumSignerWeb3, ZkSyncLibrary
+from zksync_sdk import ZkSyncProviderV01, HttpJsonRPCTransport, network, ZkSync, EthereumProvider, Wallet, ZkSyncSigner, EthereumSignerWeb3, ZkSyncLibrary
 
 environ.setdefault('ZK_SYNC_LIBRARY_PATH', '<YOUR ZK_SYNC_LIBRARY_PATH>')
 
@@ -156,8 +154,7 @@ def _get_wallet(account: LocalAccount) -> Wallet:
         icon: "zksync",
         code: """
 ```python3
-from zksync_sdk import ZkSyncProviderV01, HttpJsonRPCTransport, network, ZkSync, EthereumProvider, Wallet, \
-    ZkSyncSigner, EthereumSignerWeb3, ZkSyncLibrary
+from zksync_sdk import ZkSyncProviderV01, HttpJsonRPCTransport, network, ZkSync, EthereumProvider, Wallet, ZkSyncSigner, EthereumSignerWeb3, ZkSyncLibrary
 
 environ.setdefault('ZK_SYNC_LIBRARY_PATH', '<YOUR ZK_SYNC_LIBRARY_PATH>')
 
@@ -205,8 +202,7 @@ def _get_wallet(account: LocalAccount) -> Wallet:
         icon: "zksync",
         code: """
 ```python3
-from zksync_sdk import ZkSyncProviderV01, HttpJsonRPCTransport, network, ZkSync, EthereumProvider, Wallet, \
-    ZkSyncSigner, EthereumSignerWeb3, ZkSyncLibrary
+from zksync_sdk import ZkSyncProviderV01, HttpJsonRPCTransport, network, ZkSync, EthereumProvider, Wallet, ZkSyncSigner, EthereumSignerWeb3, ZkSyncLibrary
 
 environ.setdefault('ZK_SYNC_LIBRARY_PATH', '<YOUR ZK_SYNC_LIBRARY_PATH>')
 

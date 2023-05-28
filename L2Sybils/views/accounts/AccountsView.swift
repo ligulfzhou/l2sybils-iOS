@@ -34,11 +34,10 @@ struct AccountsView: View {
                     SectionHeaderView(text: "Distribute ETH")
                 }
             }
-
             .listStyle(.insetGrouped)
-
             .navigationTitle("Account")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

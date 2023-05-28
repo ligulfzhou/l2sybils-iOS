@@ -69,9 +69,9 @@ struct ProjectsView: View {
                 }
                 .listStyle(.grouped)
             }
-            
             .navigationTitle("Projects")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     private var picker: some View {

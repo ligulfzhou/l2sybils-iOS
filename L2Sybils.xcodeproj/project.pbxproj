@@ -15,7 +15,6 @@
 		3C251D772A07E29F00AD2359 /* MnemonicAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251D762A07E29F00AD2359 /* MnemonicAccountView.swift */; };
 		3C251D792A07E4D300AD2359 /* DistributeETHfromOKX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251D782A07E4D300AD2359 /* DistributeETHfromOKX.swift */; };
 		3C251D7B2A07E8C200AD2359 /* DistributeETHfromBinance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251D7A2A07E8C200AD2359 /* DistributeETHfromBinance.swift */; };
-		3C251D7D2A07F23E00AD2359 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C251D7C2A07F23E00AD2359 /* GoogleService-Info.plist */; };
 		3C251D802A07F72600AD2359 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 3C251D7F2A07F72600AD2359 /* FirebaseAnalyticsOnDeviceConversion */; };
 		3C251D822A07F72600AD2359 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C251D812A07F72600AD2359 /* FirebaseAnalyticsSwift */; };
 		3C251D842A07F72600AD2359 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 3C251D832A07F72600AD2359 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -30,7 +29,6 @@
 		3C251D9B2A0A3F3200AD2359 /* ReviewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251D9A2A0A3F3200AD2359 /* ReviewHandler.swift */; };
 		3C251D9D2A0A418900AD2359 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251D9C2A0A418900AD2359 /* MailView.swift */; };
 		3C47E2EF2A034F3800BF999C /* L2SybilsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E2EE2A034F3800BF999C /* L2SybilsApp.swift */; };
-		3C47E2F12A034F3800BF999C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E2F02A034F3800BF999C /* ContentView.swift */; };
 		3C47E2F32A034F3900BF999C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C47E2F22A034F3900BF999C /* Assets.xcassets */; };
 		3C47E2F72A034F3900BF999C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C47E2F62A034F3900BF999C /* Preview Assets.xcassets */; };
 		3C47E3062A04112600BF999C /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3052A04112600BF999C /* TabbarView.swift */; };
@@ -49,6 +47,10 @@
 		3C47E3292A069AAE00BF999C /* Airdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3282A069AAE00BF999C /* Airdrop.swift */; };
 		3C47E32B2A06A1F700BF999C /* FAQRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E32A2A06A1F700BF999C /* FAQRowView.swift */; };
 		3C47E32D2A06A39700BF999C /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E32C2A06A39700BF999C /* FAQ.swift */; };
+		3CFDA33B2A23088200D032D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CFDA33D2A23088200D032D3 /* Localizable.strings */; };
+		3CFDA3422A230C7A00D032D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CFDA3412A230C7A00D032D3 /* GoogleService-Info.plist */; };
+		3CFDA3442A2314CE00D032D3 /* SupportUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDA3432A2314CE00D032D3 /* SupportUs.swift */; };
+		3CFDA3462A23170900D032D3 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDA3452A23170900D032D3 /* Banner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +61,6 @@
 		3C251D762A07E29F00AD2359 /* MnemonicAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicAccountView.swift; sourceTree = "<group>"; };
 		3C251D782A07E4D300AD2359 /* DistributeETHfromOKX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributeETHfromOKX.swift; sourceTree = "<group>"; };
 		3C251D7A2A07E8C200AD2359 /* DistributeETHfromBinance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributeETHfromBinance.swift; sourceTree = "<group>"; };
-		3C251D7C2A07F23E00AD2359 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C251D882A07FC5C00AD2359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3C251D892A08014400AD2359 /* AdmobBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmobBannerView.swift; sourceTree = "<group>"; };
 		3C251D8D2A09EB6500AD2359 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		3C251D9C2A0A418900AD2359 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		3C47E2EB2A034F3800BF999C /* L2Sybils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L2Sybils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C47E2EE2A034F3800BF999C /* L2SybilsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L2SybilsApp.swift; sourceTree = "<group>"; };
-		3C47E2F02A034F3800BF999C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C47E2F22A034F3900BF999C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C47E2F42A034F3900BF999C /* L2Sybils.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = L2Sybils.entitlements; sourceTree = "<group>"; };
 		3C47E2F62A034F3900BF999C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -92,6 +92,11 @@
 		3C47E3282A069AAE00BF999C /* Airdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airdrop.swift; sourceTree = "<group>"; };
 		3C47E32A2A06A1F700BF999C /* FAQRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQRowView.swift; sourceTree = "<group>"; };
 		3C47E32C2A06A39700BF999C /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		3CFDA33C2A23088200D032D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3CFDA33E2A23088600D032D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3CFDA3412A230C7A00D032D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3CFDA3432A2314CE00D032D3 /* SupportUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportUs.swift; sourceTree = "<group>"; };
+		3CFDA3452A23170900D032D3 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +142,8 @@
 		3C47E2ED2A034F3800BF999C /* L2Sybils */ = {
 			isa = PBXGroup;
 			children = (
+				3CFDA3412A230C7A00D032D3 /* GoogleService-Info.plist */,
 				3C251D882A07FC5C00AD2359 /* Info.plist */,
-				3C251D7C2A07F23E00AD2359 /* GoogleService-Info.plist */,
 				3C47E3272A069AA300BF999C /* models */,
 				3C47E3032A040FD800BF999C /* representables */,
 				3C47E3022A040FCD00BF999C /* extensions */,
@@ -148,10 +153,10 @@
 				3C47E2FE2A040FA900BF999C /* utils */,
 				3C47E2FD2A040FA400BF999C /* env */,
 				3C47E2EE2A034F3800BF999C /* L2SybilsApp.swift */,
-				3C47E2F02A034F3800BF999C /* ContentView.swift */,
 				3C47E2F22A034F3900BF999C /* Assets.xcassets */,
 				3C47E2F42A034F3900BF999C /* L2Sybils.entitlements */,
 				3C47E2F52A034F3900BF999C /* Preview Content */,
+				3CFDA33D2A23088200D032D3 /* Localizable.strings */,
 			);
 			path = L2Sybils;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				3C47E31E2A0673EC00BF999C /* FAQView.swift */,
 				3C47E3252A069A1E00BF999C /* AirdropInfoView.swift */,
 				3C47E32A2A06A1F700BF999C /* FAQRowView.swift */,
+				3CFDA3432A2314CE00D032D3 /* SupportUs.swift */,
 			);
 			path = welcome;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				3C251D982A0A33C800AD2359 /* Sheet.swift */,
 				3C251D9A2A0A3F3200AD2359 /* ReviewHandler.swift */,
 				3C251D9C2A0A418900AD2359 /* MailView.swift */,
+				3CFDA3452A23170900D032D3 /* Banner.swift */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -341,6 +348,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 3C47E2E22A034F3800BF999C;
 			packageReferences = (
@@ -363,8 +371,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C47E2F72A034F3900BF999C /* Preview Assets.xcassets in Resources */,
+				3CFDA3422A230C7A00D032D3 /* GoogleService-Info.plist in Resources */,
+				3CFDA33B2A23088200D032D3 /* Localizable.strings in Resources */,
 				3C47E2F32A034F3900BF999C /* Assets.xcassets in Resources */,
-				3C251D7D2A07F23E00AD2359 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +394,6 @@
 				3C47E3162A0551DD00BF999C /* WelcomeSectionView.swift in Sources */,
 				3C251D8A2A08014400AD2359 /* AdmobBannerView.swift in Sources */,
 				3C47E3102A04137900BF999C /* WelcomeView.swift in Sources */,
-				3C47E2F12A034F3800BF999C /* ContentView.swift in Sources */,
 				3C47E3242A067DC800BF999C /* ProjectsView.swift in Sources */,
 				3C47E30C2A04124500BF999C /* TabbarViewModel.swift in Sources */,
 				3C251D8E2A09EB6500AD2359 /* TaskRowView.swift in Sources */,
@@ -393,6 +401,7 @@
 				3C251D772A07E29F00AD2359 /* MnemonicAccountView.swift in Sources */,
 				3C251D922A09FE4600AD2359 /* TaskDetailView.swift in Sources */,
 				3C47E32D2A06A39700BF999C /* FAQ.swift in Sources */,
+				3CFDA3442A2314CE00D032D3 /* SupportUs.swift in Sources */,
 				3C251D792A07E4D300AD2359 /* DistributeETHfromOKX.swift in Sources */,
 				3C251D7B2A07E8C200AD2359 /* DistributeETHfromBinance.swift in Sources */,
 				3C251D9B2A0A3F3200AD2359 /* ReviewHandler.swift in Sources */,
@@ -407,12 +416,25 @@
 				3C47E31F2A0673EC00BF999C /* FAQView.swift in Sources */,
 				3C47E31B2A0625CF00BF999C /* Text.swift in Sources */,
 				3C47E32B2A06A1F700BF999C /* FAQRowView.swift in Sources */,
+				3CFDA3462A23170900D032D3 /* Banner.swift in Sources */,
 				3C47E3082A04116A00BF999C /* UIState.swift in Sources */,
 				3C251D992A0A33C800AD2359 /* Sheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CFDA33D2A23088200D032D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CFDA33C2A23088200D032D3 /* en */,
+				3CFDA33E2A23088600D032D3 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3C47E2F82A034F3900BF999C /* Debug */ = {
@@ -535,14 +557,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = L2Sybils/L2Sybils.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"L2Sybils/Preview Content\"";
 				DEVELOPMENT_TEAM = 6HC9KR3XYX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = L2Sybils/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Airdrop Sybils";
+				INFOPLIST_KEY_CFBundleDisplayName = "L2 Sybils";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -578,14 +600,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = L2Sybils/L2Sybils.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"L2Sybils/Preview Content\"";
 				DEVELOPMENT_TEAM = 6HC9KR3XYX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = L2Sybils/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Airdrop Sybils";
+				INFOPLIST_KEY_CFBundleDisplayName = "L2 Sybils";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

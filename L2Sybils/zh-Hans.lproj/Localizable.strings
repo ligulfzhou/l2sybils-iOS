@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  L2Sybils
+
+  Created by Ligang Zhou on 2023/5/28.
+  
+*/
+
+
+// tabs
+"Welcome" = "欢迎";
+"welcome" = "欢迎";
+"accounts" = "账号";
+"projects" = "项目";
+
+// welcome page
+"welcome_to_sybil_club" = "欢迎来到L2女巫俱乐部!";
+"welcome_description" = "学习成为 空投猎手/女巫,潜心去研究去思考去动手,最后去赚取财富";
+
+
+//"Optimism" = "Optimism";
+//"Layer2" ="Layer2";
+//"Ethereum" = "Ethereum";
+"previous_big_airdrops" = "以往的大空投";
+
+"optimism_description" = "Optimistic是一个EVM兼容的Optimistic Rollup链.
+在第一轮空投中, 它向24万8699个地址，总计空投了2亿个Op代币.
+在第二轮空投中, 它向30万个地址，总计空投了1千170万个Op代币.";
+
+"arbitrum_description" = "Arbitrum One也是一个 Optimistic Rollup的链.
+它向62万5143个地址，总计空投了11亿6200万个ARB代币.";
+
+"aptos_description" = "20076150个APT代币空投给了110235个账号.";
+
+
+//faq
+
+"faq" = "常见疑问🤔️";
+
+"faq_q1" = "问: 什么是女巫攻击?";
+"faq_a1" = "答: 项目方需要真实用户来参与，并会对参与拥挤进行代币激励--空投. 而'女巫'则是盯上了空投代币. 他们一般上都会维护着成百上千的账号来参与到项目中来.";
+"faq_q2" = "问: 维护成百上千的账号简单么?";
+"faq_a2" = "答: 如果你没有代码能力，你需要手动维护这个列表，手动对各个账号去做mint nft，做defi交易，并记录各个账号的进度，虽然非常麻烦，如果账号多，也非常费时间. \n但如果你有代码能力，则简单很多，写好之后，让其自动执行，完全不需要操心.";
+"faq_q3" = "问: 参与zkSync/StarkNet, 我们需要给每个账号投入多少成本?";
+"faq_a3" = "答: 看你自己的预算. 但是Arbitrum的空投规则中，它会对余额少雨0.005ETH的账号，扣1个积分.";
+
+
+

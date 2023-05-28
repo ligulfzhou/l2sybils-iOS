@@ -15,8 +15,11 @@ struct WelcomeView: View {
         NavigationView {
             List {
                 WelcomeSectionView()
-//                AdmobBannerView()
+                
+                Banner(bannerID: "ca-app-pub-9174125730777485/9647154992", width: UIScreen.main.bounds.width-50)
+                
                 PreviousBigAirdropsView()
+                
                 FAQView()
             }
             .listStyle(.insetGrouped)
@@ -24,6 +27,8 @@ struct WelcomeView: View {
             .navigationTitle("Welcome")
             .sheet(item: $selectedSheet) {Sheet(sheetType: $0)}
         }
+       
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     private var aboutButton: some View {

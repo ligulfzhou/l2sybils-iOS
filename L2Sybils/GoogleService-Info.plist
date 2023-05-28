@@ -32,5 +32,7 @@
 	<string>1:61778587489:ios:76e6475b0d61c0d9015f20</string>
 	<key>DATABASE_URL</key>
 	<string>https://freevpn-dc5b9.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-9174125730777485~3092466882</string>
 </dict>
 </plist>

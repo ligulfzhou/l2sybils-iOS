@@ -1,0 +1,49 @@
+/* 
+  Localizable.strings
+  L2Sybils
+
+  Created by Ligang Zhou on 2023/5/28.
+  
+*/
+
+
+// tabs
+"Welcome" = "Welcome";
+"welcome" = "welcome";
+"accounts" = "accounts";
+"projects" = "projects";
+
+///// welcome page
+"welcome_to_sybil_club" = "Welcome to L2 Sybil club!";
+"welcome_description" = "Learn to be an Airdrop Hunter or even an Airdrop Sybil, Get your hands dirty, and finally make your fortune";
+
+// airdrop
+
+//"Optimism" = "Optimism";
+//"Layer2" ="Layer2";
+//"Ethereum" = "Ethereum";
+
+"previous_big_airdrops" = "Previous Big Airdrops";
+
+"optimism_description" = "Optimistic Ethereum is an EVM-compatible Optimistic Rollup chain.
+In round one, the protocol distributed a total of 200m OP tokens to 248,699 addresses.
+In round two, it distributed a total of 11.7 million OP tokens to over 300,000 addresses.";
+
+"arbitrum_description" = "Arbitrum One is also an Optimistic Rollup chain.
+1.162 billion ARB tokens were airdropped to 625,143 eligible addresses.";
+
+"aptos_description" = "20,076,150 APT tokens will be airdropped to 110,235 participants.";
+
+// FAQ
+"faq" = "FAQ";
+
+"faq_q1" = "Q: What is the sybil attack?";
+"faq_a1" = "A: Project need real users to participate in their project. But 'sybils' just target in the airdrop tokens. They own hundreds/thousands of accounts to participate in airdrop program.";
+"faq_q2" = "Q: Is it easy to maintain hundreds/thousands of accounts?";
+"faq_a2" = "A: If you do not have coding skills, you need patient to keep a list of accounts, manually do the tasks like mint nft, do defi tradings on every account, and write down progress...\nBut you have coding skills, It is not that hard, your script can take care of it.";
+"faq_q3" = "Q: To participate in Layer2 projects like zkSync or StarkNet, how much eth should i put into one account?";
+"faq_a3" = "A: It depends on your budget. It minuses 1 point if your balance is less than 0.005ETH in Arbitrum airdrop program.";
+
+
+
+

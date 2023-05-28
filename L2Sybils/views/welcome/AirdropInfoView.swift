@@ -46,7 +46,7 @@ struct AirdropInfoView: View {
                     }
                 })
             }
-            Text(airdrop.description)
+            Text(LocalizedStringKey(airdrop.description))
                 .font(.system(size: 12))
         })
 

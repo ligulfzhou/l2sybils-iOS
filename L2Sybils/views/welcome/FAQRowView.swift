@@ -22,14 +22,14 @@ struct FAQRowView: View {
 
     private var content: some View {
         VStack(alignment: .leading) {
-            Text(faq.question)
+            Text(LocalizedStringKey(faq.question))
                 .font(.headline)
                     
             if isExpanded {
                 Spacer()
                 
                 VStack(alignment: .leading) {
-                    Text(faq.answer)
+                    Text(LocalizedStringKey(faq.answer))
                 }
 
                 Spacer()
