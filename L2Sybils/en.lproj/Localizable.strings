@@ -79,3 +79,21 @@ In round two, it distributed a total of 11.7 million OP tokens to over 300,000 a
 "mute_swap_token" = "Mute - swap token";
 "syncSwap_swap_token" = "SyncSwap - swap token";
 "weth_wrap_unwrap" = "Weth - wrap+unwrap";
+
+
+
+/// about
+"about" = "About";
+
+"this_app" = "This APP";
+"associated_site" = "Associated Site";
+"privacy_policy" = "Privacy Policy";
+"review_this_app" = "Review this App";
+"view_in_app_store" = "View in app store";
+"app_version" = "App version";
+
+"about_us" = "About Us";
+"twitter" = "Twitter";
+"email" = "Email";
+
+

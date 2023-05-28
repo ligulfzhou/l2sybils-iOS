@@ -80,3 +80,18 @@
 "mute_swap_token" = "Mute - 交易代币";
 "syncSwap_swap_token" = "SyncSwap - 交易代币";
 "weth_wrap_unwrap" = "Weth - wrap+unwrap";
+
+
+/// about
+"about" = "关于";
+
+"this_app" = "关于APP";
+"associated_site" = "关联网站";
+"privacy_policy" = "隐私条约";
+"review_this_app" = "给app打分";
+"view_in_app_store" = "在苹果商店查看";
+"app_version" = "App版本";
+
+"about_us" = "关于我们";
+"twitter" = "Twitter";
+"email" = "邮箱";

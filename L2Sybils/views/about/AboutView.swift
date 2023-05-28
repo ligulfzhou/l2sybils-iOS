@@ -21,7 +21,7 @@ struct AboutView: View {
                 Section {
                     HStack {
                         Link(
-                            "Associated Site",
+                            "associated_site",
                             destination: URL(string: "https://www.l2sybils.xyz")!
                         )
                         Spacer()
@@ -33,7 +33,7 @@ struct AboutView: View {
                     }
                     
                     HStack {
-                        Link("Privacy Policy", destination: URL(string: "https://www.l2sybils.xyz/privacy/policy")!)
+                        Link("privacy_policy", destination: URL(string: "https://www.l2sybils.xyz/privacy/policy")!)
                         
                         Spacer()
                         
@@ -42,7 +42,7 @@ struct AboutView: View {
                     }
                     
                     HStack {
-                        Button("Review this App") {
+                        Button("review_this_app") {
                             ReviewHandler.requestReview()
                         }
                         
@@ -53,7 +53,7 @@ struct AboutView: View {
                     }
                     
                     HStack {
-                        Link("View in app store", destination: URL(string: "https://apps.apple.com/us/app/airdrop-sybils/id6448769452")!)
+                        Link("view_in_app_store", destination: URL(string: "https://apps.apple.com/us/app/airdrop-sybils/id6448769452")!)
                         
                         Spacer()
                         
@@ -62,7 +62,7 @@ struct AboutView: View {
                     }
                     
                     HStack {
-                        Text("App version")
+                        Text("app_version")
                         
                         Spacer()
                         
@@ -72,28 +72,28 @@ struct AboutView: View {
                     }
 
                 } header: {
-                    SectionHeaderView(text: "This APP")
+                    SectionHeaderView(text: LocalizedStringKey("this_app"))
                 }
                             
 //                AdmobBannerView()
                 
                 Section {
                     HStack {
-                        Link("Twitter", destination: URL(string: "https://twitter.com/ligulfzhou")!)
+                        Link("twitter", destination: URL(string: "https://twitter.com/ligulfzhou")!)
                         Spacer()
                         Image(systemName: "chevron.right").imageScale(.medium)
                     }
                     HStack {
                         
                         if (MFMailComposeViewController.canSendMail()) {
-                            Button("Email") {
+                            Button("email") {
                                 self.isShowingMailView.toggle()
                             }
                             .sheet(isPresented: $isShowingMailView) {
                                 MailView(result: self.$result)
                             }
                         } else {
-                            Link("Email", destination: URL(string: "mailto:ligulfzhou53@gmail.com")!)
+                            Link("email", destination: URL(string: "mailto:ligulfzhou53@gmail.com")!)
                         }
                         
                         Spacer()
@@ -101,12 +101,12 @@ struct AboutView: View {
                         Image(systemName: "chevron.right").imageScale(.medium)
                     }
                 } header: {
-                    SectionHeaderView(text: "About Us")
+                    SectionHeaderView(text: LocalizedStringKey("about_us"))
                 }
             }
             .listStyle(.insetGrouped)
             .navigationViewStyle(.stack)
-            .navigationTitle("About")
+            .navigationTitle("about")
         }
     }
 }
