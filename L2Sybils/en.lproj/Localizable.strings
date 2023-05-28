@@ -45,5 +45,37 @@ In round two, it distributed a total of 11.7 million OP tokens to over 300,000 a
 "faq_a3" = "A: It depends on your budget. It minuses 1 point if your balance is less than 0.005ETH in Arbitrum airdrop program.";
 
 
+/// accounts
+"account" = "Account";
+"random" = "Random";
+"mnemonic_code" = "Mnemonic Code";
+"generate" = "Generate";
+
+"distribute_eth" = "Distribute ETH";
+"from_okx" = "From Okx";
+"from_binance" = "From Binance";
+
+"generate_mnemonic" = "Generate Mnemonic Code";
+"generate_from_mnemonic" = "Generate Account From Mnemonic";
 
 
+
+//// projects
+"Bridges" = "Bridges";
+"Tasks" = "Tasks";
+
+
+"Code" = "Code";
+"Name" = "Name";
+"Site" = "Site";
+"Doc" = "Doc";
+
+"Activate" = "Activate";
+"mint_nft" = "Mint NFT";
+"transfer_nft" = "Transfer NFT";
+"transfer_eth" = "Transfer ETH";
+
+"mintsquare_mint_nft" = "Mintsquare - mint nft";
+"mute_swap_token" = "Mute - swap token";
+"syncSwap_swap_token" = "SyncSwap - swap token";
+"weth_wrap_unwrap" = "Weth - wrap+unwrap";

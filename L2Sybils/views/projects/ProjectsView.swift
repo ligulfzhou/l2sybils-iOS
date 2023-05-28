@@ -69,7 +69,7 @@ struct ProjectsView: View {
                 }
                 .listStyle(.grouped)
             }
-            .navigationTitle("Projects")
+            .navigationTitle("projects")
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
@@ -90,7 +90,7 @@ struct ProjectsView: View {
                 Image(task.icon)
                     .resizable()
                     .frame(width: 18, height: 18)
-                Text(task.name)
+                Text(LocalizedStringKey(task.name))
             }
     }
 }

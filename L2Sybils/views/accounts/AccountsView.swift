@@ -14,28 +14,30 @@ struct AccountsView: View {
             List {
                 Section {
                     NavigationLink(destination: RandomGenerateAccountView()) {
-                        Text("Random")
+                        Text("random")
                     }
                     NavigationLink(destination: MnemonicAccountView()) {
-                        Text("Mnemonic Code")
+                        Text("mnemonic_code")
                     }
                 } header: {
-                    SectionHeaderView(text: "Generate")
+                    SectionHeaderView(text: "generate")
                 }
                                 
                 Section {
                     NavigationLink(destination: DistributeETHfromOKX()) {
-                        Text("From Okx")
+                        Text("from_okx")
                     }
                     NavigationLink(destination: DistributeETHfromBinance()) {
-                        Text("From Binance")
+                        Text("from_binance")
                     }
                 } header: {
-                    SectionHeaderView(text: "Distribute ETH")
+                    SectionHeaderView(text: "distribute_eth")
                 }
+                
+                Banner(bannerID: "ca-app-pub-9174125730777485/9647154992", width: UIScreen.main.bounds.width-50)
             }
             .listStyle(.insetGrouped)
-            .navigationTitle("Account")
+            .navigationTitle("account")
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

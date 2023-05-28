@@ -40,6 +40,7 @@ Binacce().withdraw2("0.1", "0x...")
 """
     var body: some View {
         VStack {
+            Banner(bannerID: "ca-app-pub-9174125730777485/9647154992", width: UIScreen.main.bounds.width-50)
 
             Markdown(code)
                 .markdownTheme(.gitHub)
@@ -47,7 +48,7 @@ Binacce().withdraw2("0.1", "0x...")
             Spacer()
             
         }
-        .navigationTitle("Distribute ETH")
+        .navigationTitle("distribute_eth")
     }
 }
 

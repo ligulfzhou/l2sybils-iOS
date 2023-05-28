@@ -26,22 +26,14 @@ def generate_random_account()-> LocalAccount:
     var body: some View {
         
         VStack {
+            Banner(bannerID: "ca-app-pub-9174125730777485/9647154992", width: UIScreen.main.bounds.width-50)
 
             Markdown(text)
                 .markdownTheme(.gitHub)
-            
-//            HStack(alignment: .center) {
-//                Button {
-//                    print("asdfasdf")
-//                } label: {
-//                    Text("Run")
-//                }
-//            }
+
             Spacer()
-            
-            
         }
-        .navigationTitle("Random")
+        .navigationTitle("random")
     }
 }
 

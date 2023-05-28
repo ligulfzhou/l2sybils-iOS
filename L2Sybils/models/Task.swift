@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Task: Identifiable {
     let id = UUID()
@@ -112,7 +113,7 @@ def _get_wallet(account: LocalAccount) -> Wallet:
         doc: "https://docs.zksync.io/api/sdk/python/tutorial/#unlocking-zksync-account"
     ),
     Task(
-        name: "Mint NFT",
+        name: "mint_nft",
         icon: "zksync",
         code: """
 ```python3
@@ -150,7 +151,7 @@ def _get_wallet(account: LocalAccount) -> Wallet:
         doc: "https://docs.zksync.io/api/sdk/python/tutorial/#minting"
     ),
     Task(
-        name: "Transfer NFT",
+        name: "transfer_nft",
         icon: "zksync",
         code: """
 ```python3
@@ -198,7 +199,7 @@ def _get_wallet(account: LocalAccount) -> Wallet:
         doc: "https://docs.zksync.io/api/sdk/python/tutorial/#transfering"
     ),
     Task(
-        name: "Transfer ETH",
+        name: "transfer_eth",
         icon: "zksync",
         code: """
 ```python3
@@ -268,7 +269,7 @@ let EraBridges: [Task] = [
 
 let EraTasks: [Task] = [
     Task(
-        name: "Mintsquare - mint nft",
+        name: "mintsquare_mint_nft",
         icon: "mintsquare",
         site: "https://mintsquare.io/mint",
         code: """
@@ -304,7 +305,7 @@ class MintSquare:
 """
     ),
     Task(
-        name: "Mute - swap token",
+        name: "mute_swap_token",
         icon: "mute",
         site: "https://mute.io",
         code: """
@@ -389,7 +390,7 @@ class Mute:
 """
     ),
     Task(
-        name: "SyncSwap - swap token",
+        name: "syncSwap_swap_token",
         icon: "syncswap",
         site: "https://syncswap.xyz/",
         code: """
@@ -535,7 +536,7 @@ class SyncSwap:
 """
     ),
     Task(
-        name: "Weth - wrap+unwrap",
+        name: "weth_wrap_unwrap",
         icon: "ethereum",
         code: """
 ```python3

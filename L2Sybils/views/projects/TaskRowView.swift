@@ -19,7 +19,7 @@ struct TaskRowView: View {
                 .padding(EdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2))
                         
             VStack(alignment: .leading, content: {
-                Text(task.name)
+                Text(LocalizedStringKey(task.name))
                     .font(.headline)
                     .bold()
                 

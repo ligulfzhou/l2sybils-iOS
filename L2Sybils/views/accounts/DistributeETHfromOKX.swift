@@ -33,6 +33,7 @@ res = fundingAPI.withdrawal("ETH", withdraw_eth, "4", address, "0.001456")
     var body: some View {
         
         VStack {
+            Banner(bannerID: "ca-app-pub-9174125730777485/9647154992", width: UIScreen.main.bounds.width-50)
 
             Markdown(text)
                 .markdownTheme(.gitHub)
@@ -40,7 +41,7 @@ res = fundingAPI.withdrawal("ETH", withdraw_eth, "4", address, "0.001456")
             Spacer()
             
         }
-        .navigationTitle("Distribute ETH")
+        .navigationTitle("distribute_eth")
     }
 }
 

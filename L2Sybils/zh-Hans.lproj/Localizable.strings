@@ -45,4 +45,38 @@
 "faq_a3" = "答: 看你自己的预算. 但是Arbitrum的空投规则中，它会对余额少雨0.005ETH的账号，扣1个积分.";
 
 
+/// accounts
+"account" = "账号";
+"random" = "随机生成";
+"mnemonic_code" = "通过助记词";
+"generate" = "生成账号";
 
+"distribute_eth" = "分发ETH";
+"from_okx" = "从Okx分发";
+"from_binance" = "从币安分发";
+
+"generate_mnemonic" = "生成助记词";
+"generate_from_mnemonic" = "从助记词生成账号";
+
+
+
+//// projects
+
+"Bridges" = "跨链桥";
+"Tasks" = "任务";
+
+
+"Code" = "代码";
+"Name" = "名称";
+"Site" = "官网";
+"Doc" = "文档";
+
+"Activate" = "激活";
+"mint_nft" = "铸造NFT";
+"transfer_nft" = "转NFT";
+"transfer_eth" = "转ETH";
+
+"mintsquare_mint_nft" = "Mintsquare - 铸造nft";
+"mute_swap_token" = "Mute - 交易代币";
+"syncSwap_swap_token" = "SyncSwap - 交易代币";
+"weth_wrap_unwrap" = "Weth - wrap+unwrap";

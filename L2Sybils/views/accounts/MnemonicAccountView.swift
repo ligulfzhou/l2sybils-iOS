@@ -50,14 +50,16 @@ def from_mnemonic(mnemonic: str, idx: int = 0) -> LocalAccount:
                     Markdown(mnemonicCode)
                         .markdownTheme(.gitHub)
                 } header: {
-                    SectionHeaderView(text: "generate Mnemonic")
+                    SectionHeaderView(text: "generate_mnemonic")
                 }
+                
+                Banner(bannerID: "ca-app-pub-9174125730777485/9647154992", width: UIScreen.main.bounds.width-50)
                             
                 Section {
                     Markdown(mnemonicAccountCode)
                         .markdownTheme(.gitHub)
                 } header: {
-                    SectionHeaderView(text: "generate account from mnemonic")
+                    SectionHeaderView(text: "generate_from_mnemonic")
                 }
             }
             .listStyle(.grouped)
@@ -65,7 +67,7 @@ def from_mnemonic(mnemonic: str, idx: int = 0) -> LocalAccount:
 
             Spacer()
         })
-        .navigationTitle("Mnemonic Code")
+        .navigationTitle("mnemonic_code")
     }
 }
 

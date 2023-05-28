@@ -28,7 +28,7 @@ struct TaskDetailView: View {
             HStack(alignment: .bottom, content: {
                 Text("Name")
                 Spacer()
-                Text(task.name)
+                Text(LocalizedStringKey(task.name))
             })
 
             if let site = task.site {
@@ -62,6 +62,8 @@ struct TaskDetailView: View {
                 })
             }
 
+            Banner(bannerID: "ca-app-pub-9174125730777485/9647154992", width: UIScreen.main.bounds.width-50)
+
             if (task.code != nil) {
                 Section {
                     Markdown(task.code ?? "")
@@ -73,7 +75,7 @@ struct TaskDetailView: View {
             }
         }
         .listStyle(.insetGrouped)
-        .navigationBarTitle(Text(task.name), displayMode: .automatic)
+        .navigationBarTitle(Text(LocalizedStringKey(task.name)), displayMode: .automatic)
     }
 }
 
