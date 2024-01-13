@@ -10,19 +10,19 @@ import SwiftUI
 
 struct TaskRowView: View {
     public let task: Task
-    
+
     var body: some View {
         HStack {
             Image(task.icon)
                 .resizable()
                 .frame(width: 60, height: 60)
                 .padding(EdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2))
-                        
+
             VStack(alignment: .leading, content: {
                 Text(LocalizedStringKey(task.name))
                     .font(.headline)
                     .bold()
-                
+
                 HStack {
                     if ((task.site) != nil) {
                         Image("site")

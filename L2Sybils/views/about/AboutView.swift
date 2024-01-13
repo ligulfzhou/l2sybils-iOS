@@ -16,7 +16,6 @@ struct AboutView: View {
 
     var body: some View {
         NavigationView {
-            
             List {
                 Section {
                     HStack {

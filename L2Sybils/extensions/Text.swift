@@ -30,30 +30,25 @@ extension Text {
     private func title() -> Text {
         self.font(.title)
             .fontWeight(.bold)
-//            .foregroundColor(.acText)
     }
     
     private func sectionHeader() -> Text {
         self.font(.system(.subheadline, design: .rounded))
             .fontWeight(.bold)
             .foregroundColor(Color.white)
-//            .foregroundColor(.acHeaderText)
     }
     
     private func rowTitle() -> Text {
         self.font(.headline)
             .fontWeight(.bold)
-//            .foregroundColor(.acText)
     }
     
     private func rowDetail() -> Text {
         self.font(.headline)
             .fontWeight(.semibold)
-//            .foregroundColor(.acHeaderBackground)
     }
     
     private func rowDescription() -> Text {
         self.font(.subheadline)
-//            .foregroundColor(.acText)
     }
 }

@@ -34,6 +34,12 @@ struct TabbarView: View {
                         Text("projects")
                     }
                     .tag(UIState.Tab.projects)
+                FlowView(viewModel: FlowViewModel())
+                    .tabItem {
+                        Image("project_tab")
+                        Text("flow")
+                    }
+                    .tag(UIState.Tab.flow)
             }
             .environment(\.currentDate, viewModel.currentDate)
             

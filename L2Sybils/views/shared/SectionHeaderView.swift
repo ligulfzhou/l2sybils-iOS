@@ -27,7 +27,6 @@ struct SectionHeaderView: View {
                     .imageScale(.medium)
                     .font(.system(.subheadline, design: .rounded))
                     .foregroundColor(.white)
-//                    .foregroundColor(.acHeaderText)
                     .rotationEffect(.degrees(-3))
             }
             
@@ -36,10 +35,10 @@ struct SectionHeaderView: View {
                 .lineLimit(1)
                 .textCase(nil)
         }
+
         .padding(.vertical, 8)
         .padding(.horizontal, 14)
         .background(Color.accentColor)
-//        .background(Color.acHeaderBackground)
         .mask(RoundedRectangle(cornerRadius: 14, style: .continuous))
         .padding(.leading, -9)
         .padding(.bottom, -10)

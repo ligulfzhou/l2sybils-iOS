@@ -47,6 +47,14 @@
 		3C47E3292A069AAE00BF999C /* Airdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E3282A069AAE00BF999C /* Airdrop.swift */; };
 		3C47E32B2A06A1F700BF999C /* FAQRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E32A2A06A1F700BF999C /* FAQRowView.swift */; };
 		3C47E32D2A06A39700BF999C /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C47E32C2A06A39700BF999C /* FAQ.swift */; };
+		3C81A15C2B3F0A2500822E45 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81A15B2B3F0A2500822E45 /* APIEndpoint.swift */; };
+		3C81A15F2B3F0A7700822E45 /* zkSyncEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81A15E2B3F0A7700822E45 /* zkSyncEndpoint.swift */; };
+		3C81A1612B3F10C400822E45 /* zkSyncViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81A1602B3F10C400822E45 /* zkSyncViewModel.swift */; };
+		3C81A1632B41567700822E45 /* BlockExplorerAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81A1622B41567700822E45 /* BlockExplorerAPIEndpoint.swift */; };
+		3C81A1652B4161F900822E45 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81A1642B4161F900822E45 /* Transaction.swift */; };
+		3C81A1682B41992900822E45 /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81A1672B41992900822E45 /* FlowView.swift */; };
+		3C81A16A2B41994600822E45 /* FlowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81A1692B41994600822E45 /* FlowViewModel.swift */; };
+		3C9C85B62B51269F00C53735 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3C9C85B52B51269F00C53735 /* Alamofire */; };
 		3CFDA33B2A23088200D032D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CFDA33D2A23088200D032D3 /* Localizable.strings */; };
 		3CFDA3422A230C7A00D032D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CFDA3412A230C7A00D032D3 /* GoogleService-Info.plist */; };
 		3CFDA3442A2314CE00D032D3 /* SupportUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDA3432A2314CE00D032D3 /* SupportUs.swift */; };
@@ -92,6 +100,13 @@
 		3C47E3282A069AAE00BF999C /* Airdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airdrop.swift; sourceTree = "<group>"; };
 		3C47E32A2A06A1F700BF999C /* FAQRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQRowView.swift; sourceTree = "<group>"; };
 		3C47E32C2A06A39700BF999C /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		3C81A15B2B3F0A2500822E45 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		3C81A15E2B3F0A7700822E45 /* zkSyncEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zkSyncEndpoint.swift; sourceTree = "<group>"; };
+		3C81A1602B3F10C400822E45 /* zkSyncViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zkSyncViewModel.swift; sourceTree = "<group>"; };
+		3C81A1622B41567700822E45 /* BlockExplorerAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockExplorerAPIEndpoint.swift; sourceTree = "<group>"; };
+		3C81A1642B4161F900822E45 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		3C81A1672B41992900822E45 /* FlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowView.swift; sourceTree = "<group>"; };
+		3C81A1692B41994600822E45 /* FlowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowViewModel.swift; sourceTree = "<group>"; };
 		3CFDA33C2A23088200D032D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3CFDA33E2A23088600D032D3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3CFDA3412A230C7A00D032D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -107,6 +122,7 @@
 				3C251D822A07F72600AD2359 /* FirebaseAnalyticsSwift in Frameworks */,
 				3C251D6E2A078EC300AD2359 /* MarkdownUI in Frameworks */,
 				3C251D872A07F9A300AD2359 /* GoogleMobileAds in Frameworks */,
+				3C9C85B62B51269F00C53735 /* Alamofire in Frameworks */,
 				3C251D802A07F72600AD2359 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				3C251D842A07F72600AD2359 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
@@ -142,6 +158,7 @@
 		3C47E2ED2A034F3800BF999C /* L2Sybils */ = {
 			isa = PBXGroup;
 			children = (
+				3C81A15A2B3F09F600822E45 /* network */,
 				3CFDA3412A230C7A00D032D3 /* GoogleService-Info.plist */,
 				3C251D882A07FC5C00AD2359 /* Info.plist */,
 				3C47E3272A069AA300BF999C /* models */,
@@ -188,6 +205,7 @@
 		3C47E2FF2A040FAE00BF999C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				3C81A1662B418C6300822E45 /* flow */,
 				3C251D952A0A300B00AD2359 /* about */,
 				3C47E3222A067DB800BF999C /* projects */,
 				3C47E3172A0600B200BF999C /* shared */,
@@ -203,6 +221,7 @@
 			children = (
 				3C47E30B2A04124500BF999C /* TabbarViewModel.swift */,
 				3C251D722A07D04100AD2359 /* RandomAccountViewModel.swift */,
+				3C81A1692B41994600822E45 /* FlowViewModel.swift */,
 			);
 			path = viewModels;
 			sourceTree = "<group>";
@@ -210,6 +229,7 @@
 		3C47E3012A040FC200BF999C /* viewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				3C81A1602B3F10C400822E45 /* zkSyncViewModel.swift */,
 			);
 			path = viewModifiers;
 			sourceTree = "<group>";
@@ -295,8 +315,35 @@
 				3C47E32C2A06A39700BF999C /* FAQ.swift */,
 				3C251D742A07D06E00AD2359 /* KeyPair.swift */,
 				3C251D8F2A09EBCA00AD2359 /* Task.swift */,
+				3C81A1642B4161F900822E45 /* Transaction.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		3C81A15A2B3F09F600822E45 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				3C81A15D2B3F0A5B00822E45 /* endpoints */,
+				3C81A15B2B3F0A2500822E45 /* APIEndpoint.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		3C81A15D2B3F0A5B00822E45 /* endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				3C81A15E2B3F0A7700822E45 /* zkSyncEndpoint.swift */,
+				3C81A1622B41567700822E45 /* BlockExplorerAPIEndpoint.swift */,
+			);
+			path = endpoints;
+			sourceTree = "<group>";
+		};
+		3C81A1662B418C6300822E45 /* flow */ = {
+			isa = PBXGroup;
+			children = (
+				3C81A1672B41992900822E45 /* FlowView.swift */,
+			);
+			path = flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +368,7 @@
 				3C251D812A07F72600AD2359 /* FirebaseAnalyticsSwift */,
 				3C251D832A07F72600AD2359 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				3C251D862A07F9A300AD2359 /* GoogleMobileAds */,
+				3C9C85B52B51269F00C53735 /* Alamofire */,
 			);
 			productName = L2Sybils;
 			productReference = 3C47E2EB2A034F3800BF999C /* L2Sybils.app */;
@@ -355,6 +403,7 @@
 				3C251D6C2A078EC300AD2359 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				3C251D7E2A07F72600AD2359 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				3C251D852A07F9A300AD2359 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				3C9C85B42B51269F00C53735 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 3C47E2EC2A034F3800BF999C /* Products */;
 			projectDirPath = "";
@@ -388,7 +437,9 @@
 				3C251D972A0A301900AD2359 /* AboutView.swift in Sources */,
 				3C47E3062A04112600BF999C /* TabbarView.swift in Sources */,
 				3C251D6B2A0786A800AD2359 /* RandomGenerateAccountView.swift in Sources */,
+				3C81A1612B3F10C400822E45 /* zkSyncViewModel.swift in Sources */,
 				3C47E3262A069A1E00BF999C /* AirdropInfoView.swift in Sources */,
+				3C81A1632B41567700822E45 /* BlockExplorerAPIEndpoint.swift in Sources */,
 				3C251D942A0A274C00AD2359 /* SafariView.swift in Sources */,
 				3C251D732A07D04100AD2359 /* RandomAccountViewModel.swift in Sources */,
 				3C47E3162A0551DD00BF999C /* WelcomeSectionView.swift in Sources */,
@@ -403,8 +454,12 @@
 				3C47E32D2A06A39700BF999C /* FAQ.swift in Sources */,
 				3CFDA3442A2314CE00D032D3 /* SupportUs.swift in Sources */,
 				3C251D792A07E4D300AD2359 /* DistributeETHfromOKX.swift in Sources */,
+				3C81A15F2B3F0A7700822E45 /* zkSyncEndpoint.swift in Sources */,
+				3C81A1682B41992900822E45 /* FlowView.swift in Sources */,
+				3C81A15C2B3F0A2500822E45 /* APIEndpoint.swift in Sources */,
 				3C251D7B2A07E8C200AD2359 /* DistributeETHfromBinance.swift in Sources */,
 				3C251D9B2A0A3F3200AD2359 /* ReviewHandler.swift in Sources */,
+				3C81A16A2B41994600822E45 /* FlowViewModel.swift in Sources */,
 				3C47E3142A04179C00BF999C /* CurrentDateEnvironment.swift in Sources */,
 				3C47E3292A069AAE00BF999C /* Airdrop.swift in Sources */,
 				3C251D9D2A0A418900AD2359 /* MailView.swift in Sources */,
@@ -414,6 +469,7 @@
 				3C47E2EF2A034F3800BF999C /* L2SybilsApp.swift in Sources */,
 				3C251D692A0775C200AD2359 /* TagLayoutView.swift in Sources */,
 				3C47E31F2A0673EC00BF999C /* FAQView.swift in Sources */,
+				3C81A1652B4161F900822E45 /* Transaction.swift in Sources */,
 				3C47E31B2A0625CF00BF999C /* Text.swift in Sources */,
 				3C47E32B2A06A1F700BF999C /* FAQRowView.swift in Sources */,
 				3CFDA3462A23170900D032D3 /* Banner.swift in Sources */,
@@ -487,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -541,7 +597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -576,7 +632,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -619,7 +675,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -684,6 +740,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		3C9C85B42B51269F00C53735 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -711,6 +775,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3C251D852A07F9A300AD2359 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
+		};
+		3C9C85B52B51269F00C53735 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C9C85B42B51269F00C53735 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
