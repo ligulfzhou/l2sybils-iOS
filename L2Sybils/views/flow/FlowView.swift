@@ -28,11 +28,13 @@ struct FlowView: View {
     var empty: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
 
-//            Button("search") {
-//                addAddress = true
-//                print("click. search...")
-//            }
+            Button("search") {
+                addAddress = true
+                print("click. search...")
+            }
 
+            Text(String(viewModel.interaction?.total ?? 0.0))
+            
 //            HStack {
 //                TextField("Address", text: $viewModel.address)
 //                    .border(.black)

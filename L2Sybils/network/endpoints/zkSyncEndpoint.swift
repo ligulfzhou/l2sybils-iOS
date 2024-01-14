@@ -43,15 +43,3 @@ enum zkSyncEndpoint: APIEndpoint {
         }
     }
 }
-
-//protocol UserServiceProtocol {
-//    func getUsers() -> AnyPublisher<[User], Error>
-//}
-//
-//class UserService: UserServiceProtocol {
-//    let apiClient = URLSessionAPIClient<UserEndpoint>()
-//    
-//    func getUsers() -> AnyPublisher<[User], Error> {
-//        return apiClient.request(.getUsers)
-//    }
-//}
